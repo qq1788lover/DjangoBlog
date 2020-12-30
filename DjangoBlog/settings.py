@@ -39,6 +39,7 @@ ALLOWED_HOSTS = ['*', '127.0.0.1', 'example.com']
 
 
 INSTALLED_APPS = [
+    'simpleui',
     # 'django.contrib.admin',
     'django.contrib.admin.apps.SimpleAdminConfig',
     'django.contrib.auth',
@@ -104,10 +105,9 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': os.environ.get('DJANGO_MYSQL_DATABASE') or 'djangoblog',
         'USER': os.environ.get('DJANGO_MYSQL_USER') or 'root',
-        'PASSWORD': os.environ.get('DJANGO_MYSQL_PASSWORD') or 'djangoblog_123',
+        'PASSWORD': os.environ.get('DJANGO_MYSQL_PASSWORD') or 'qq1788lover',
         'HOST': os.environ.get('DJANGO_MYSQL_HOST') or '127.0.0.1',
-        'PORT': int(
-            os.environ.get('DJANGO_MYSQL_PORT') or 3306),
+        'PORT': int(os.environ.get('DJANGO_MYSQL_PORT') or 3306),
         'OPTIONS': {
             'charset': 'utf8mb4'},
     }}
